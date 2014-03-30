@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0085)https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<!--<base target="_blank">--><base href="." target="_blank">
+<title>Quiz E</title>
+<link rel="stylesheet" type="text/css" href="">
+
+<link href="./Quiz E_files/4265681598-formview_ltr.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+
+<link href="./Quiz E_files/1432132809-mobile_formview_ltr.css" type="text/css" rel="stylesheet" media="screen and (max-device-width: 721px)">
+<script type="text/javascript">
+        /**
+ * @license
+ *! H5F
+ * https://github.com/ryanseddon/H5F/
+ * Copyright (c) Ryan Seddon | Licensed MIT
+ */
+
+(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+      </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/oembed?url=https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform&format=xml">
+<meta name="viewport" content="width=device-width">
+<meta property="og:title" content="Quiz E"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90">
+</head>
+<body dir="ltr" class="ss-base-body"><div itemscope="" itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Quiz E">
+
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image"></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Quiz E</h1>
+
+
+<hr class="ss-email-break" style="display:none;">
+<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><div role="list">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1430311683"><div class="ss-q-title">First Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1430311683" value="" class="ss-q-short" id="entry_1430311683" dir="auto" aria-label="First Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_102863693"><div class="ss-q-title">Last Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.102863693" value="" class="ss-q-short" id="entry_102863693" dir="auto" aria-label="Last Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_49175473"><div class="ss-q-title">Email address
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Your quiz score will be emailed to this address.</div></label>
+<input type="text" name="entry.49175473" value="" class="ss-q-short" id="entry_49175473" dir="auto" aria-label="Email address Your quiz score will be emailed to this address. " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_297760537"><div class="ss-q-title">Question 1
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">A Java class may be defined to have any or all of the following EXCEPT:</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 1 A Java class may be defined to have any or all of the following EXCEPT: "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="instance variables" id="group_916878657_1" role="radio" class="ss-q-radio" aria-label="instance variables" required aria-required="true"></span>
+<span class="ss-choice-label">instance variables</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="methods" id="group_916878657_2" role="radio" class="ss-q-radio" aria-label="methods" required aria-required="true"></span>
+<span class="ss-choice-label">methods</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="a return type" id="group_916878657_3" role="radio" class="ss-q-radio" aria-label="a return type" required aria-required="true"></span>
+<span class="ss-choice-label">a return type</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="arrays as instance variables" id="group_916878657_4" role="radio" class="ss-q-radio" aria-label="arrays as instance variables" required aria-required="true"></span>
+<span class="ss-choice-label">arrays as instance variables</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1327268760"><div class="ss-q-title">Question 2
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following expressions will evaluate to a random whole number between 0 and 9 inclusive?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 2 Which of the following expressions will evaluate to a random whole number between 0 and 9 inclusive? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1933758723" value="Math.random( 10 )" id="group_1933758723_1" role="radio" class="ss-q-radio" aria-label="Math.random( 10 )" required aria-required="true"></span>
+<span class="ss-choice-label">Math.random( 10 )</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1933758723" value="(int) ( Math.random() * 10 )" id="group_1933758723_2" role="radio" class="ss-q-radio" aria-label="(int) ( Math.random() * 10 )" required aria-required="true"></span>
+<span class="ss-choice-label">(int) ( Math.random() * 10 )</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1933758723" value="(int) Math.random() * 10" id="group_1933758723_3" role="radio" class="ss-q-radio" aria-label="(int) Math.random() * 10" required aria-required="true"></span>
+<span class="ss-choice-label">(int) Math.random() * 10</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1933758723" value="Math.random() * 10" id="group_1933758723_4" role="radio" class="ss-q-radio" aria-label="Math.random() * 10" required aria-required="true"></span>
+<span class="ss-choice-label">Math.random() * 10</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1136330046"><div class="ss-q-title">Question 3
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>You are given the following function: </p>
+  <p>String randomWord() {   </p>
+  <blockquote>
+    <p>String word;   </p>
+    <p>// details hidden </p>
+    <p>return word; </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following snippets of code will correctly use this function to populate an array of 20 Strings?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 3 You are given the following function: String randomWord() {   String word;   // details hidden   return word; } Which of the following snippets of code will correctly use this function to populate an array of 20 Strings? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.219494171" value="A" id="group_219494171_1" role="radio" class="ss-q-radio" aria-label="A" required aria-required="true"></span>
+<span class="ss-choice-label">A</span>
+</label></li>
+  <li class="ss-choice-item"><img src="http://quizstar.4teachers.org//uploads/quiz/mediarep222479/Picture21.jpg" alt="A"/></li> 
+  <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.219494171" value="B" id="group_219494171_2" role="radio" class="ss-q-radio" aria-label="B" required aria-required="true"></span>
+<span class="ss-choice-label">B</span>
+</label></li>
+  <li class="ss-choice-item"><img src="http://quizstar.4teachers.org//uploads/quiz/mediarep222479/Picture3.jpg" alt="B"/></li> 
+  <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.219494171" value="C" id="group_219494171_3" role="radio" class="ss-q-radio" aria-label="C" required aria-required="true"></span>
+<span class="ss-choice-label">C</span>
+</label></li>
+  <li class="ss-choice-item"><img src="http://quizstar.4teachers.org//uploads/quiz/mediarep222479/Picture4.jpg" alt="C"/></li> 
+  <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.219494171" value="D" id="group_219494171_4" role="radio" class="ss-q-radio" aria-label="D" required aria-required="true"></span>
+<span class="ss-choice-label">D</span>
+</label></li>
+  <li class="ss-choice-item"><img src="http://quizstar.4teachers.org//uploads/quiz/mediarep222479/Picture5.jpg" alt="D"/></li>
+</ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1551320415"><div class="ss-q-title">Question 4
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>We are implementing the following function, which should return true if and only if x is a single-digit number: </p>
+  <p>boolean isSingleDigit( int x ) {   </p>
+  <blockquote>
+    <p>boolean single = false;   </p>
+    <p>// your answer here   </p>
+    <p>return single; </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following lines of code should replace the comment // your answer here?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 4 We are implementing the following function, which should return true if and only if x is a single-digit number: boolean isSingleDigit( int x ) {   boolean single = false;   // your answer here   return single; } Which of the following lines of code should replace the comment // your answer here? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.322470837" value="single = ( x&gt;=-10 || x&lt;=10 );" id="group_322470837_1" role="radio" class="ss-q-radio" aria-label="single = ( x&gt;=-10 || x&lt;=10 );" required aria-required="true"></span>
+<span class="ss-choice-label">single = ( x&gt;=-10 || x&lt;=10 );</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.322470837" value="single = ( x&gt;=-10 &amp;&amp; x&lt;=10 );" id="group_322470837_2" role="radio" class="ss-q-radio" aria-label="single = ( x&gt;=-10 &amp;&amp; x&lt;=10 );" required aria-required="true"></span>
+<span class="ss-choice-label">single = ( x&gt;=-10 &amp;&amp; x&lt;=10 );</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.322470837" value="single = ( x&gt;-10 || x&lt;10 );" id="group_322470837_3" role="radio" class="ss-q-radio" aria-label="single = ( x&gt;-10 || x&lt;10 );" required aria-required="true"></span>
+<span class="ss-choice-label">single = ( x&gt;-10 || x&lt;10 );</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.322470837" value="single = ( x&gt;-10 &amp;&amp; x&lt;10 );" id="group_322470837_4" role="radio" class="ss-q-radio" aria-label="single = ( x&gt;-10 &amp;&amp; x&lt;10 );" required aria-required="true"></span>
+<span class="ss-choice-label">single = ( x&gt;-10 &amp;&amp; x&lt;10 );</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1594860698"><div class="ss-q-title">Question 5
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following is like a blueprint or a template, and is used when we create new objects in Java?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 5 Which of the following is like a blueprint or a template, and is used when we create new objects in Java? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1373155731" value="method" id="group_1373155731_1" role="radio" class="ss-q-radio" aria-label="method" required aria-required="true"></span>
+<span class="ss-choice-label">method</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1373155731" value="instance variable" id="group_1373155731_2" role="radio" class="ss-q-radio" aria-label="instance variable" required aria-required="true"></span>
+<span class="ss-choice-label">instance variable</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1373155731" value="prototype" id="group_1373155731_3" role="radio" class="ss-q-radio" aria-label="prototype" required aria-required="true"></span>
+<span class="ss-choice-label">prototype</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1373155731" value="class" id="group_1373155731_4" role="radio" class="ss-q-radio" aria-label="class" required aria-required="true"></span>
+<span class="ss-choice-label">class</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1505338892"><div class="ss-q-title">Question 6
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Assume the following integer array: <br>
+    int[] stuff = new int[10]; </p>
+  <p>This array is populated with the integer values 11 through 20 in ascending order. Which of the following statements accesses the element of the stuff array containing the value 15?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 6 Assume the following integer array: int[] stuff = new int[10]; This array is populated with the integer values 11 through 20 in ascending order. Which of the following statements accesses the element of the stuff array containing the value 15? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.33928688" value="stuff[4]" id="group_33928688_1" role="radio" class="ss-q-radio" aria-label="stuff[4]" required aria-required="true"></span>
+<span class="ss-choice-label">stuff[4]</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.33928688" value="stuff[5]" id="group_33928688_2" role="radio" class="ss-q-radio" aria-label="stuff[5]" required aria-required="true"></span>
+<span class="ss-choice-label">stuff[5]</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.33928688" value="stuff[6]" id="group_33928688_3" role="radio" class="ss-q-radio" aria-label="stuff[6]" required aria-required="true"></span>
+<span class="ss-choice-label">stuff[6]</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.33928688" value="stuff[i]" id="group_33928688_4" role="radio" class="ss-q-radio" aria-label="stuff[i]" required aria-required="true"></span>
+<span class="ss-choice-label">stuff[i]</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_609232507"><div class="ss-q-title">Question 7
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>You walk up to a computer and find that someone forgot to log out. As you look at the screen, you recognize some Java code. </p>
+  <p>int i = 0; <br>
+    while( i&lt;10 ) {   </p>
+  <blockquote>
+    <p>System.out.println( "counting " + i ); </p>
+  </blockquote>
+  <p>} </p>
+  <p>Looking closely at their code, it seems that they were trying to count to 10, but failed. What was their mistake?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 7 You walk up to a computer and find that someone forgot to log out. As you look at the screen, you recognize some Java code. int i = 0; while( i&lt;10 ) {   System.out.println( &quot;counting &quot; + i ); } Looking closely at their code, it seems that they were trying to count to 10, but failed. What was their mistake? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1439942" value="there is no break statement" id="group_1439942_1" role="radio" class="ss-q-radio" aria-label="there is no break statement" required aria-required="true"></span>
+<span class="ss-choice-label">there is no break statement</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1439942" value="the index variable is not declared" id="group_1439942_2" role="radio" class="ss-q-radio" aria-label="the index variable is not declared" required aria-required="true"></span>
+<span class="ss-choice-label">the index variable is not declared</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1439942" value="the index variable is not incremented" id="group_1439942_3" role="radio" class="ss-q-radio" aria-label="the index variable is not incremented" required aria-required="true"></span>
+<span class="ss-choice-label">the index variable is not incremented</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1439942" value="there is no array declaration" id="group_1439942_4" role="radio" class="ss-q-radio" aria-label="there is no array declaration" required aria-required="true"></span>
+<span class="ss-choice-label">there is no array declaration</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_446045283"><div class="ss-q-title">Question 8
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>What will the following snippet of code print? (Assume that it is within a method that compiles and runs.) </p>
+  <p>int[] dates = { 2, 3, 4, 5, 6 }; <br>
+    System.out.println( dates[2] );</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 8 What will the following snippet of code print? (Assume that it is within a method that compiles and runs.) int[] dates = { 2, 3, 4, 5, 6 }; System.out.println( dates[2] ); "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.938064755" value="3" id="group_938064755_1" role="radio" class="ss-q-radio" aria-label="3" required aria-required="true"></span>
+<span class="ss-choice-label">3</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.938064755" value="4" id="group_938064755_2" role="radio" class="ss-q-radio" aria-label="4" required aria-required="true"></span>
+<span class="ss-choice-label">4</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.938064755" value="5" id="group_938064755_3" role="radio" class="ss-q-radio" aria-label="5" required aria-required="true"></span>
+<span class="ss-choice-label">5</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.938064755" value="6" id="group_938064755_4" role="radio" class="ss-q-radio" aria-label="6" required aria-required="true"></span>
+<span class="ss-choice-label">6</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1727831250"><div class="ss-q-title">Question 9
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Imagine there is a class called BankAccount that is used by a program at a bank to represent information about their customers' accounts. Which of the following is NOT a reasonable name for an instance variable of the BankAccount class?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 9 Imagine there is a class called BankAccount that is used by a program at a bank to represent information about their customers&#39; accounts. Which of the following is NOT a reasonable name for an instance variable of the BankAccount class? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.468684391" value="accountBalance" id="group_468684391_1" role="radio" class="ss-q-radio" aria-label="accountBalance" required aria-required="true"></span>
+<span class="ss-choice-label">accountBalance</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.468684391" value="interestRate" id="group_468684391_2" role="radio" class="ss-q-radio" aria-label="interestRate" required aria-required="true"></span>
+<span class="ss-choice-label">interestRate</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.468684391" value="customerName" id="group_468684391_3" role="radio" class="ss-q-radio" aria-label="customerName" required aria-required="true"></span>
+<span class="ss-choice-label">customerName</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.468684391" value="withdrawMoney" id="group_468684391_4" role="radio" class="ss-q-radio" aria-label="withdrawMoney" required aria-required="true"></span>
+<span class="ss-choice-label">withdrawMoney</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_213930079"><div class="ss-q-title">Question 10
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>What is the return type of the following method? </p>
+  <p>double getAccountBalance( int accountNumber ) {    </p>
+  <blockquote>
+    <p>return 1.99; </p>
+    </blockquote>
+  <p>}</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 10 What is the return type of the following method? double getAccountBalance( int accountNumber ) {    return 1.99; } "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.737293633" value="double" id="group_737293633_1" role="radio" class="ss-q-radio" aria-label="double" required aria-required="true"></span>
+<span class="ss-choice-label">double</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.737293633" value="getAccountBalance" id="group_737293633_2" role="radio" class="ss-q-radio" aria-label="getAccountBalance" required aria-required="true"></span>
+<span class="ss-choice-label">getAccountBalance</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.737293633" value="int" id="group_737293633_3" role="radio" class="ss-q-radio" aria-label="int" required aria-required="true"></span>
+<span class="ss-choice-label">int</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.737293633" value="accountNumber" id="group_737293633_4" role="radio" class="ss-q-radio" aria-label="accountNumber" required aria-required="true"></span>
+<span class="ss-choice-label">accountNumber</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1280039229"><div class="ss-q-title">Question 11
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Assume that a String array called names has been declared, initialized, and populated. Consider the following code: </p>
+  <p>int i = names.length; <br>
+    while( i&gt;0 ) {   </p>
+  <blockquote>
+    <p>i--;   <br>
+      System.out.println( names[i]; </p>
+    </blockquote>
+  <p>} </p>
+  <p>What will happen?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 11 Assume that a String array called names has been declared, initialized, and populated. Consider the following code: int i = names.length; while( i&gt;0 ) {   i--;   System.out.println( names[i]; } What will happen? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1533973136" value="the code will not compile due to a syntax error" id="group_1533973136_1" role="radio" class="ss-q-radio" aria-label="the code will not compile due to a syntax error" required aria-required="true"></span>
+<span class="ss-choice-label">the code will not compile due to a syntax error</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1533973136" value="the code will compile, but will throw an exception when run" id="group_1533973136_2" role="radio" class="ss-q-radio" aria-label="the code will compile, but will throw an exception when run" required aria-required="true"></span>
+<span class="ss-choice-label">the code will compile, but will throw an exception when run</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1533973136" value="the code will run but will not print out all the names" id="group_1533973136_3" role="radio" class="ss-q-radio" aria-label="the code will run but will not print out all the names" required aria-required="true"></span>
+<span class="ss-choice-label">the code will run but will not print out all the names</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1533973136" value="the code will run and print out all the names" id="group_1533973136_4" role="radio" class="ss-q-radio" aria-label="the code will run and print out all the names" required aria-required="true"></span>
+<span class="ss-choice-label">the code will run and print out all the names</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_976862176"><div class="ss-q-title">Question 12
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">When you have created an object from a class, what can this object be called?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 12 When you have created an object from a class, what can this object be called? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.244921520" value="method" id="group_244921520_1" role="radio" class="ss-q-radio" aria-label="method" required aria-required="true"></span>
+<span class="ss-choice-label">method</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.244921520" value="instance" id="group_244921520_2" role="radio" class="ss-q-radio" aria-label="instance" required aria-required="true"></span>
+<span class="ss-choice-label">instance</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.244921520" value="type" id="group_244921520_3" role="radio" class="ss-q-radio" aria-label="type" required aria-required="true"></span>
+<span class="ss-choice-label">type</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.244921520" value="loop" id="group_244921520_4" role="radio" class="ss-q-radio" aria-label="loop" required aria-required="true"></span>
+<span class="ss-choice-label">loop</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1442546351"><div class="ss-q-title">Question 13
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>What is the last text that will be output from this snippet of code before it completes its execution? (Assume it is contained in a method that compiles and runs.) </p>
+  <p>int i = 8; <br>
+    while( i &lt; 42 ) {   </p>
+  <blockquote>
+    <p>if ( i &gt; 15)   {     </p>
+    <blockquote>
+      <p>break;   </p>
+      </blockquote>
+    <p>}   <br>
+      System.out.println( i );   <br>
+      i = i + 2; </p>
+    </blockquote>
+  <p>}</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 13 What is the last text that will be output from this snippet of code before it completes its execution? (Assume it is contained in a method that compiles and runs.) int i = 8; while( i &lt; 42 ) {   if ( i &gt; 15)   {     break;   }   System.out.println( i );   i = i + 2; } "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1885501331" value="14" id="group_1885501331_1" role="radio" class="ss-q-radio" aria-label="14" required aria-required="true"></span>
+<span class="ss-choice-label">14</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1885501331" value="16" id="group_1885501331_2" role="radio" class="ss-q-radio" aria-label="16" required aria-required="true"></span>
+<span class="ss-choice-label">16</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1885501331" value="40" id="group_1885501331_3" role="radio" class="ss-q-radio" aria-label="40" required aria-required="true"></span>
+<span class="ss-choice-label">40</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1885501331" value="42" id="group_1885501331_4" role="radio" class="ss-q-radio" aria-label="42" required aria-required="true"></span>
+<span class="ss-choice-label">42</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_625804861"><div class="ss-q-title">Question 14
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Assume we will declare a variable for a user-defined class and create a new instance as follows: <br>
+    Dog d = new Dog(); </p>
+  <p>What exactly is stored in the variable d?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 14 Assume we will declare a variable for a user-defined class and create a new instance as follows: Dog d = new Dog(); What exactly is stored in the variable d? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.548157870" value="nothing" id="group_548157870_1" role="radio" class="ss-q-radio" aria-label="nothing" required aria-required="true"></span>
+<span class="ss-choice-label">nothing</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.548157870" value="a Dog object" id="group_548157870_2" role="radio" class="ss-q-radio" aria-label="a Dog object" required aria-required="true"></span>
+<span class="ss-choice-label">a Dog object</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.548157870" value="a reference to a Dog object" id="group_548157870_3" role="radio" class="ss-q-radio" aria-label="a reference to a Dog object" required aria-required="true"></span>
+<span class="ss-choice-label">a reference to a Dog object</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.548157870" value="the value of the Dog class" id="group_548157870_4" role="radio" class="ss-q-radio" aria-label="the value of the Dog class" required aria-required="true"></span>
+<span class="ss-choice-label">the value of the Dog class</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1943457502"><div class="ss-q-title">Question 15
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Assume we have a Car class. Which of the following is required of the CarTestDrive class?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 15 Assume we have a Car class. Which of the following is required of the CarTestDrive class? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1868863347" value="it must test all methods defined in Car" id="group_1868863347_1" role="radio" class="ss-q-radio" aria-label="it must test all methods defined in Car" required aria-required="true"></span>
+<span class="ss-choice-label">it must test all methods defined in Car</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1868863347" value="it must not set instance variables directly" id="group_1868863347_2" role="radio" class="ss-q-radio" aria-label="it must not set instance variables directly" required aria-required="true"></span>
+<span class="ss-choice-label">it must not set instance variables directly</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1868863347" value="it must create more than one Car object to test" id="group_1868863347_3" role="radio" class="ss-q-radio" aria-label="it must create more than one Car object to test" required aria-required="true"></span>
+<span class="ss-choice-label">it must create more than one Car object to test</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1868863347" value="it must be in its own file" id="group_1868863347_4" role="radio" class="ss-q-radio" aria-label="it must be in its own file" required aria-required="true"></span>
+<span class="ss-choice-label">it must be in its own file</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1196420533"><div class="ss-q-title">Question 16
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following can be left uninitialized?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 16 Which of the following can be left uninitialized? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.726264261" value="variables declared inside a method" id="group_726264261_1" role="radio" class="ss-q-radio" aria-label="variables declared inside a method" required aria-required="true"></span>
+<span class="ss-choice-label">variables declared inside a method</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.726264261" value="instance variables" id="group_726264261_2" role="radio" class="ss-q-radio" aria-label="instance variables" required aria-required="true"></span>
+<span class="ss-choice-label">instance variables</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.726264261" value="local variables" id="group_726264261_3" role="radio" class="ss-q-radio" aria-label="local variables" required aria-required="true"></span>
+<span class="ss-choice-label">local variables</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.726264261" value="method parameters" id="group_726264261_4" role="radio" class="ss-q-radio" aria-label="method parameters" required aria-required="true"></span>
+<span class="ss-choice-label">method parameters</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1521317543"><div class="ss-q-title">Question 17
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">You are reading some Java code written by your friend who is creating a new Android mobile phone application. You see redial() written in the code. What is the best description for redial()?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 17 You are reading some Java code written by your friend who is creating a new Android mobile phone application. You see redial() written in the code. What is the best description for redial()? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1522306070" value="class" id="group_1522306070_1" role="radio" class="ss-q-radio" aria-label="class" required aria-required="true"></span>
+<span class="ss-choice-label">class</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1522306070" value="instance variable" id="group_1522306070_2" role="radio" class="ss-q-radio" aria-label="instance variable" required aria-required="true"></span>
+<span class="ss-choice-label">instance variable</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1522306070" value="method" id="group_1522306070_3" role="radio" class="ss-q-radio" aria-label="method" required aria-required="true"></span>
+<span class="ss-choice-label">method</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1522306070" value="object" id="group_1522306070_4" role="radio" class="ss-q-radio" aria-label="object" required aria-required="true"></span>
+<span class="ss-choice-label">object</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_72402869"><div class="ss-q-title">Question 18
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Given an int array called ages I would like to be sure that ages[3] contains the value 3. Which of the following arrays makes this true?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 18 Given an int array called ages I would like to be sure that ages[3] contains the value 3. Which of the following arrays makes this true? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.190225" value="{ 3, 3, 3 }" id="group_190225_1" role="radio" class="ss-q-radio" aria-label="{ 3, 3, 3 }" required aria-required="true"></span>
+<span class="ss-choice-label">{ 3, 3, 3 }</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.190225" value="{ 6, 5, 4, 3, 2, 1 }" id="group_190225_2" role="radio" class="ss-q-radio" aria-label="{ 6, 5, 4, 3, 2, 1 }" required aria-required="true"></span>
+<span class="ss-choice-label">{ 6, 5, 4, 3, 2, 1 }</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.190225" value="{ 1, 2, 3, 4, 5, 6 }" id="group_190225_3" role="radio" class="ss-q-radio" aria-label="{ 1, 2, 3, 4, 5, 6 }" required aria-required="true"></span>
+<span class="ss-choice-label">{ 1, 2, 3, 4, 5, 6 }</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.190225" value="{ 3, 6, 9, 12 }" id="group_190225_4" role="radio" class="ss-q-radio" aria-label="{ 3, 6, 9, 12 }" required aria-required="true"></span>
+<span class="ss-choice-label">{ 3, 6, 9, 12 }</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1515861841"><div class="ss-q-title">Question 19
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following can NOT be used as a return type?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 19 Which of the following can NOT be used as a return type? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.843669303" value="double " id="group_843669303_1" role="radio" class="ss-q-radio" aria-label="double " required aria-required="true"></span>
+<span class="ss-choice-label">double&nbsp;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.843669303" value="Dog" id="group_843669303_2" role="radio" class="ss-q-radio" aria-label="Dog" required aria-required="true"></span>
+<span class="ss-choice-label">Dog</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.843669303" value="class" id="group_843669303_3" role="radio" class="ss-q-radio" aria-label="class" required aria-required="true"></span>
+<span class="ss-choice-label">class</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.843669303" value="boolean" id="group_843669303_4" role="radio" class="ss-q-radio" aria-label="boolean" required aria-required="true"></span>
+<span class="ss-choice-label">boolean</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1354132327"><div class="ss-q-title">Question 20
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Assume this code has run: </p>
+  <p>boolean x = 4 == 4; </p>
+  <p>Which of the following values can NOT be assigned to a new boolean variable?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 20 Assume this code has run: boolean x = 4 == 4; Which of the following values can NOT be assigned to a new boolean variable? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.295536016" value="true" id="group_295536016_1" role="radio" class="ss-q-radio" aria-label="true" required aria-required="true"></span>
+<span class="ss-choice-label">true</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.295536016" value="false" id="group_295536016_2" role="radio" class="ss-q-radio" aria-label="false" required aria-required="true"></span>
+<span class="ss-choice-label">false</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.295536016" value="x" id="group_295536016_3" role="radio" class="ss-q-radio" aria-label="x" required aria-required="true"></span>
+<span class="ss-choice-label">x</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.295536016" value="4" id="group_295536016_4" role="radio" class="ss-q-radio" aria-label="4" required aria-required="true"></span>
+<span class="ss-choice-label">4</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;7434206292046892931&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fromEmail" value="false">
+
+<input type="hidden" name="fbzx" value="7434206292046892931">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></div></form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
+<a class="ss-logo-link" href="http://drive.google.com/"><img class="ss-logo" src="./Quiz E_files/drive_logo_small2.png" alt="Google Drive"></a></div>
+<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of Galileo Academy of Science and Technology.</span>
+<br>
+<a href="https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/reportabuse?source=https://docs.google.com/forms/d/1vZWSVPGPLIk8EpdV5PR8hdOB6lKNTQyBGFXsm3nP8Zw/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic="" aria-relevant="additions">Screen reader support enabled.</div></div>
+
+
+<script type="text/javascript" src="./Quiz E_files/1932615572-formviewer_prd.js"></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
+          "[100,,[]\n]\n");
+      </script></div></body></html>
