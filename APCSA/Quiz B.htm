@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0085)https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<!--<base target="_blank">--><base href="." target="_blank">
+<title>Quiz B</title>
+<link rel="stylesheet" type="text/css" href="">
+
+<link href="./Quiz B_files/4265681598-formview_ltr.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+
+<link href="./Quiz B_files/1432132809-mobile_formview_ltr.css" type="text/css" rel="stylesheet" media="screen and (max-device-width: 721px)">
+<script type="text/javascript">
+        /**
+ * @license
+ *! H5F
+ * https://github.com/ryanseddon/H5F/
+ * Copyright (c) Ryan Seddon | Licensed MIT
+ */
+
+(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+      </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/oembed?url=https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform&format=xml">
+<meta name="viewport" content="width=device-width">
+<meta property="og:title" content="Quiz B"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90">
+</head>
+<body dir="ltr" class="ss-base-body"><div itemscope="" itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Quiz B">
+
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image"></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Quiz B</h1>
+
+
+<hr class="ss-email-break" style="display:none;">
+<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><div role="list">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1430311683"><div class="ss-q-title">First Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1430311683" value="" class="ss-q-short" id="entry_1430311683" dir="auto" aria-label="First Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_102863693"><div class="ss-q-title">Last Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.102863693" value="" class="ss-q-short" id="entry_102863693" dir="auto" aria-label="Last Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_49175473"><div class="ss-q-title">Email address
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Your quiz score will be emailed to this address.</div></label>
+<input type="text" name="entry.49175473" value="" class="ss-q-short" id="entry_49175473" dir="auto" aria-label="Email address Your quiz score will be emailed to this address. " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_297760537"><div class="ss-q-title">Question 1
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">One difference between an ArrayList and an array is:</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 1 One difference between an ArrayList and an array is: "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="array indexes start at 0 and ArrayList indexes do not" id="group_916878657_1" role="radio" class="ss-q-radio" aria-label="array indexes start at 0 and ArrayList indexes do not" required aria-required="true"></span>
+<span class="ss-choice-label">array indexes start at 0 and ArrayList indexes do not</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="indexes are used with arrays and not ArrayLists" id="group_916878657_2" role="radio" class="ss-q-radio" aria-label="indexes are used with arrays and not ArrayLists" required aria-required="true"></span>
+<span class="ss-choice-label">indexes are used with arrays and not ArrayLists</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="ArrayLists change size and arrays do not" id="group_916878657_3" role="radio" class="ss-q-radio" aria-label="ArrayLists change size and arrays do not" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayLists change size and arrays do not</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.916878657" value="ArrayLists must hold the declared type of varaible and arrays do not have to" id="group_916878657_4" role="radio" class="ss-q-radio" aria-label="ArrayLists must hold the declared type of varaible and arrays do not have to" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayLists must hold the declared type of varaible and arrays do not have to</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1328393393"><div class="ss-q-title">Question 2
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following is a valid ArrayList declaration, construction, and assignment?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 2 Which of the following is a valid ArrayList declaration, construction, and assignment? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1011667591" value="ArrayList&lt;String&gt; words;" id="group_1011667591_1" role="radio" class="ss-q-radio" aria-label="ArrayList&lt;String&gt; words;" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList&lt;String&gt; words;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1011667591" value="new ArrayList()&lt;Integer&gt;;" id="group_1011667591_2" role="radio" class="ss-q-radio" aria-label="new ArrayList()&lt;Integer&gt;;" required aria-required="true"></span>
+<span class="ss-choice-label">new ArrayList()&lt;Integer&gt;;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1011667591" value="ArrayList&lt;Integer&gt; a = new ArrayList()&lt;Integer&gt;;" id="group_1011667591_3" role="radio" class="ss-q-radio" aria-label="ArrayList&lt;Integer&gt; a = new ArrayList()&lt;Integer&gt;;" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList&lt;Integer&gt; a = new ArrayList()&lt;Integer&gt;;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1011667591" value="ArrayList&lt;Double&gt; = ArrayList&lt;Double&gt;();" id="group_1011667591_4" role="radio" class="ss-q-radio" aria-label="ArrayList&lt;Double&gt; = ArrayList&lt;Double&gt;();" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList&lt;Double&gt; = ArrayList&lt;Double&gt;();</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1937364080"><div class="ss-q-title">Question 3
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following is not a method of ArrayList?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 3 Which of the following is not a method of ArrayList? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.163027491" value="get" id="group_163027491_1" role="radio" class="ss-q-radio" aria-label="get" required aria-required="true"></span>
+<span class="ss-choice-label">get</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.163027491" value="set" id="group_163027491_2" role="radio" class="ss-q-radio" aria-label="set" required aria-required="true"></span>
+<span class="ss-choice-label">set</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.163027491" value="size" id="group_163027491_3" role="radio" class="ss-q-radio" aria-label="size" required aria-required="true"></span>
+<span class="ss-choice-label">size</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.163027491" value="put" id="group_163027491_4" role="radio" class="ss-q-radio" aria-label="put" required aria-required="true"></span>
+<span class="ss-choice-label">put</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1793349488"><div class="ss-q-title">Question 4
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Given an ArrayList variable called myNumbers that contains Integer objects, which of the following is NOT a valid loop over myNumbers?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 4 Given an ArrayList variable called myNumbers that contains Integer objects, which of the following is NOT a valid loop over myNumbers? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1175447298" value="for(int i=0; i&lt;myNumbers.length; i++)" id="group_1175447298_1" role="radio" class="ss-q-radio" aria-label="for(int i=0; i&lt;myNumbers.length; i++)" required aria-required="true"></span>
+<span class="ss-choice-label">for(int i=0; i&lt;myNumbers.length; i++)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1175447298" value="for(int i=0; i&lt;myNumbers.size(); i++)" id="group_1175447298_2" role="radio" class="ss-q-radio" aria-label="for(int i=0; i&lt;myNumbers.size(); i++)" required aria-required="true"></span>
+<span class="ss-choice-label">for(int i=0; i&lt;myNumbers.size(); i++)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1175447298" value="for(Integer x : myNumbers)" id="group_1175447298_3" role="radio" class="ss-q-radio" aria-label="for(Integer x : myNumbers)" required aria-required="true"></span>
+<span class="ss-choice-label">for(Integer x : myNumbers)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1175447298" value="for(int x : myNumbers)" id="group_1175447298_4" role="radio" class="ss-q-radio" aria-label="for(int x : myNumbers)" required aria-required="true"></span>
+<span class="ss-choice-label">for(int x : myNumbers)</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_444455152"><div class="ss-q-title">Question 5
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following is a short-circuit logical operator?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 5 Which of the following is a short-circuit logical operator? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1520308119" value="&amp;" id="group_1520308119_1" role="radio" class="ss-q-radio" aria-label="&amp;" required aria-required="true"></span>
+<span class="ss-choice-label">&amp;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1520308119" value="&amp;&amp;" id="group_1520308119_2" role="radio" class="ss-q-radio" aria-label="&amp;&amp;" required aria-required="true"></span>
+<span class="ss-choice-label">&amp;&amp;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1520308119" value="=" id="group_1520308119_3" role="radio" class="ss-q-radio" aria-label="=" required aria-required="true"></span>
+<span class="ss-choice-label">=</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1520308119" value="==" id="group_1520308119_4" role="radio" class="ss-q-radio" aria-label="==" required aria-required="true"></span>
+<span class="ss-choice-label">==</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_382337652"><div class="ss-q-title">Question 6
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following symbols means "not" in Java?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 6 Which of the following symbols means &quot;not&quot; in Java? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1228975607" value="-" id="group_1228975607_1" role="radio" class="ss-q-radio" aria-label="-" required aria-required="true"></span>
+<span class="ss-choice-label">-</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1228975607" value="|" id="group_1228975607_2" role="radio" class="ss-q-radio" aria-label="|" required aria-required="true"></span>
+<span class="ss-choice-label">|</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1228975607" value="~" id="group_1228975607_3" role="radio" class="ss-q-radio" aria-label="~" required aria-required="true"></span>
+<span class="ss-choice-label">~</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1228975607" value="!" id="group_1228975607_4" role="radio" class="ss-q-radio" aria-label="!" required aria-required="true"></span>
+<span class="ss-choice-label">!</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1238012865"><div class="ss-q-title">Question 7
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following declares a parameterized ArrayList?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 7 Which of the following declares a parameterized ArrayList? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1051780704" value="ArrayList&lt;String&gt; words;" id="group_1051780704_1" role="radio" class="ss-q-radio" aria-label="ArrayList&lt;String&gt; words;" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList&lt;String&gt; words;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1051780704" value="ArrayList(String words);" id="group_1051780704_2" role="radio" class="ss-q-radio" aria-label="ArrayList(String words);" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList(String words);</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1051780704" value="ArrayList string = &quot;words&quot;;" id="group_1051780704_3" role="radio" class="ss-q-radio" aria-label="ArrayList string = &quot;words&quot;;" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList string = "words";</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1051780704" value="new ArrayList&lt;String&gt;();" id="group_1051780704_4" role="radio" class="ss-q-radio" aria-label="new ArrayList&lt;String&gt;();" required aria-required="true"></span>
+<span class="ss-choice-label">new ArrayList&lt;String&gt;();</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1017883712"><div class="ss-q-title">Question 8
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following changes does NOT solve the ArrayList removal problem (i.e. having to remove multiple of the same item from an ArrayList)?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 8 Which of the following changes does NOT solve the ArrayList removal problem (i.e. having to remove multiple of the same item from an ArrayList)? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.307885141" value="iterate through the ArrayList in reverse (from largest to smallest index)" id="group_307885141_1" role="radio" class="ss-q-radio" aria-label="iterate through the ArrayList in reverse (from largest to smallest index)" required aria-required="true"></span>
+<span class="ss-choice-label">iterate through the ArrayList in reverse (from largest to smallest index)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.307885141" value="go through the ArrayList twice" id="group_307885141_2" role="radio" class="ss-q-radio" aria-label="go through the ArrayList twice" required aria-required="true"></span>
+<span class="ss-choice-label">go through the ArrayList twice</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.307885141" value="decrement the index variable after removing an item" id="group_307885141_3" role="radio" class="ss-q-radio" aria-label="decrement the index variable after removing an item" required aria-required="true"></span>
+<span class="ss-choice-label">decrement the index variable after removing an item</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.307885141" value="use a while loop to continue to remove the item from a given index" id="group_307885141_4" role="radio" class="ss-q-radio" aria-label="use a while loop to continue to remove the item from a given index" required aria-required="true"></span>
+<span class="ss-choice-label">use a while loop to continue to remove the item from a given index</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_45762210"><div class="ss-q-title">Question 9
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following statements below does NOT need import java.util.ArrayList; before it in order to compile?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 9 Which of the following statements below does NOT need import java.util.ArrayList; before it in order to compile? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.900928681" value="ArrayList stuff;" id="group_900928681_1" role="radio" class="ss-q-radio" aria-label="ArrayList stuff;" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList stuff;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.900928681" value="ArrayList stuff = new ArrayList();" id="group_900928681_2" role="radio" class="ss-q-radio" aria-label="ArrayList stuff = new ArrayList();" required aria-required="true"></span>
+<span class="ss-choice-label">ArrayList stuff = new ArrayList();</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.900928681" value="java.util.ArrayList stuff;" id="group_900928681_3" role="radio" class="ss-q-radio" aria-label="java.util.ArrayList stuff;" required aria-required="true"></span>
+<span class="ss-choice-label">java.util.ArrayList stuff;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.900928681" value="java.util.ArrayList stuff = new ArrayList();" id="group_900928681_4" role="radio" class="ss-q-radio" aria-label="java.util.ArrayList stuff = new ArrayList();" required aria-required="true"></span>
+<span class="ss-choice-label">java.util.ArrayList stuff = new ArrayList();</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1309316754"><div class="ss-q-title">Question 10
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Given the following Java code (assuming it is within a class that compiles and within a method that runs): </p>
+  <p>ArrayList&lt;Integer&gt; numbers = new ArrayList()&lt;Integer&gt;; <br>
+    numbers.add(4); <br>
+    numbers.add(6); <br>
+    numbers.add(8); <br>
+    numbers.add(10); <br>
+    numbers.add(12); </p>
+  <p>What will be returned by a call to numbers.get(4)?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 10 Given the following Java code (assuming it is within a class that compiles and within a method that runs): ArrayList&lt;Integer&gt; numbers = new ArrayList()&lt;Integer&gt;; numbers.add(4); numbers.add(6); numbers.add(8); numbers.add(10); numbers.add(12); What will be returned by a call to numbers.get(4)? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2134563818" value="0" id="group_2134563818_1" role="radio" class="ss-q-radio" aria-label="0" required aria-required="true"></span>
+<span class="ss-choice-label">0</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2134563818" value="1" id="group_2134563818_2" role="radio" class="ss-q-radio" aria-label="1" required aria-required="true"></span>
+<span class="ss-choice-label">1</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2134563818" value="10" id="group_2134563818_3" role="radio" class="ss-q-radio" aria-label="10" required aria-required="true"></span>
+<span class="ss-choice-label">10</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2134563818" value="12" id="group_2134563818_4" role="radio" class="ss-q-radio" aria-label="12" required aria-required="true"></span>
+<span class="ss-choice-label">12</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2076184258"><div class="ss-q-title">Question 11
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Given the following Java code (assuming it is within a class that compiles and within a method that runs): </p>
+  <p>ArrayList&lt;Integer&gt; numbers = new ArrayList()&lt;Integer&gt;; <br>
+    numbers.add(4); <br>
+    numbers.add(6); <br>
+    numbers.add(8); <br>
+    numbers.add(10); <br>
+    numbers.add(12); </p>
+  <p> What will be returned by a call to numbers.size()?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 11 Given the following Java code (assuming it is within a class that compiles and within a method that runs): ArrayList&lt;Integer&gt; numbers = new ArrayList()&lt;Integer&gt;; numbers.add(4); numbers.add(6); numbers.add(8); numbers.add(10); numbers.add(12); What will be returned by a call to numbers.size()? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.887157236" value="4" id="group_887157236_1" role="radio" class="ss-q-radio" aria-label="4" required aria-required="true"></span>
+<span class="ss-choice-label">4</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.887157236" value="5" id="group_887157236_2" role="radio" class="ss-q-radio" aria-label="5" required aria-required="true"></span>
+<span class="ss-choice-label">5</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.887157236" value="6" id="group_887157236_3" role="radio" class="ss-q-radio" aria-label="6" required aria-required="true"></span>
+<span class="ss-choice-label">6</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.887157236" value="12" id="group_887157236_4" role="radio" class="ss-q-radio" aria-label="12" required aria-required="true"></span>
+<span class="ss-choice-label">12</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2002489808"><div class="ss-q-title">Question 12
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following packages never needs to be imported?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 12 Which of the following packages never needs to be imported? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.534515767" value="java.util" id="group_534515767_1" role="radio" class="ss-q-radio" aria-label="java.util" required aria-required="true"></span>
+<span class="ss-choice-label">java.util</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.534515767" value="java.lang" id="group_534515767_2" role="radio" class="ss-q-radio" aria-label="java.lang" required aria-required="true"></span>
+<span class="ss-choice-label">java.lang</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.534515767" value="java.io" id="group_534515767_3" role="radio" class="ss-q-radio" aria-label="java.io" required aria-required="true">
+</span>
+    <span class="ss-choice-label">java.io</span></label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.534515767" value="java.security" id="group_534515767_4" role="radio" class="ss-q-radio" aria-label="java.security" required aria-required="true"></span>
+<span class="ss-choice-label">java.security</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1169336753"><div class="ss-q-title">Question 13
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Given the method: </p>
+  <p>public boolean mystery(boolean a, boolean b) {     </p>
+  <blockquote>
+    <p>return (a &amp;&amp; !b) || (b &amp;&amp; !a); </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following will return true?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 13 Given the method: public boolean mystery(boolean a, boolean b) {     return (a &amp;&amp; !b) || (b &amp;&amp; !a); } Which of the following will return true? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.27692444" value="mystery(false, true)" id="group_27692444_1" role="radio" class="ss-q-radio" aria-label="mystery(false, true)" required aria-required="true"></span>
+<span class="ss-choice-label">mystery(false, true)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.27692444" value="mystery(true, true)" id="group_27692444_2" role="radio" class="ss-q-radio" aria-label="mystery(true, true)" required aria-required="true"></span>
+<span class="ss-choice-label">mystery(true, true)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.27692444" value="mystery(true)" id="group_27692444_3" role="radio" class="ss-q-radio" aria-label="mystery(true)" required aria-required="true"></span>
+<span class="ss-choice-label">mystery(true)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.27692444" value="mystery()" id="group_27692444_4" role="radio" class="ss-q-radio" aria-label="mystery()" required aria-required="true"></span>
+<span class="ss-choice-label">mystery()</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_842721216"><div class="ss-q-title">Question 14
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>If the following Java code runs: </p>
+  <p>ArrayList check = new ArrayList();  <br>
+    check.add(true); <br>
+    check.add(false); <br>
+    check.add(true);  <br>
+    if(check.get(1)) <br>
+    { </p>
+  <blockquote>
+    <p>System.out.print("check "); </p>
+    </blockquote>
+  <p>} <br>
+    System.out.println("please");  </p>
+  <p>What will be the output result?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 14 If the following Java code runs: ArrayList check = new ArrayList();  check.add(true); check.add(false); check.add(true);  if(check.get(1)) {   System.out.print(&quot;check &quot;); } System.out.println(&quot;please&quot;);  What will be the output result? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1572239334" value="IndexOutOfBoundsException" id="group_1572239334_1" role="radio" class="ss-q-radio" aria-label="IndexOutOfBoundsException" required aria-required="true"></span>
+<span class="ss-choice-label">IndexOutOfBoundsException</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1572239334" value="check please" id="group_1572239334_2" role="radio" class="ss-q-radio" aria-label="check please" required aria-required="true"></span>
+<span class="ss-choice-label">check please</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1572239334" value="check" id="group_1572239334_3" role="radio" class="ss-q-radio" aria-label="check" required aria-required="true"></span>
+<span class="ss-choice-label">check</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1572239334" value="please" id="group_1572239334_4" role="radio" class="ss-q-radio" aria-label="please" required aria-required="true"></span>
+<span class="ss-choice-label">please</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1295194355"><div class="ss-q-title">Question 15
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">In the context of computer programming, the acronym API stands for:</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 15 In the context of computer programming, the acronym API stands for: "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1872287271" value="Academic Performance Index" id="group_1872287271_1" role="radio" class="ss-q-radio" aria-label="Academic Performance Index" required aria-required="true"></span>
+<span class="ss-choice-label">Academic Performance Index</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1872287271" value="Application Programming Interface" id="group_1872287271_2" role="radio" class="ss-q-radio" aria-label="Application Programming Interface" required aria-required="true"></span>
+<span class="ss-choice-label">Application Programming Interface</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1872287271" value="Asian Pacific Islander" id="group_1872287271_3" role="radio" class="ss-q-radio" aria-label="Asian Pacific Islander" required aria-required="true"></span>
+<span class="ss-choice-label">Asian Pacific Islander</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1872287271" value="Advanced Precompiler Instructions" id="group_1872287271_4" role="radio" class="ss-q-radio" aria-label="Advanced Precompiler Instructions" required aria-required="true"></span>
+<span class="ss-choice-label">Advanced Precompiler Instructions</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;3286748331098194272&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fromEmail" value="false">
+
+<input type="hidden" name="fbzx" value="3286748331098194272">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></div></form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
+<a class="ss-logo-link" href="http://drive.google.com/"><img class="ss-logo" src="./Quiz B_files/drive_logo_small2.png" alt="Google Drive"></a></div>
+<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of Galileo Academy of Science and Technology.</span>
+<br>
+<a href="https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/reportabuse?source=https://docs.google.com/forms/d/1mBvKXehk2RoTdxK3wzzM4fEi8dNGn9PPj9lKzzC5k7Y/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic="" aria-relevant="additions">Screen reader support enabled.</div></div>
+
+
+<script type="text/javascript" src="./Quiz B_files/1932615572-formviewer_prd.js"></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
+          "[100,,[]\n]\n");
+      </script></div></body></html>
