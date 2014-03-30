@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0085)https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<!--<base target="_blank">--><base href="." target="_blank">
+<title>Quiz A</title>
+<link rel="stylesheet" type="text/css" href="">
+
+<link href="./Quiz A_files/4265681598-formview_ltr.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+
+<link href="./Quiz A_files/1432132809-mobile_formview_ltr.css" type="text/css" rel="stylesheet" media="screen and (max-device-width: 721px)">
+<script type="text/javascript">
+        /**
+ * @license
+ *! H5F
+ * https://github.com/ryanseddon/H5F/
+ * Copyright (c) Ryan Seddon | Licensed MIT
+ */
+
+(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+      </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/oembed?url=https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform&format=xml">
+<meta name="viewport" content="width=device-width">
+<meta property="og:title" content="Quiz A"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90">
+</head>
+<body dir="ltr" class="ss-base-body"><div itemscope="" itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Quiz A">
+
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image"></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Quiz A</h1>
+
+
+<hr class="ss-email-break" style="display:none;">
+<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><div role="list">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_538009174"><div class="ss-q-title">First Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.538009174" value="" class="ss-q-short" id="entry_538009174" dir="auto" aria-label="First Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1344004243"><div class="ss-q-title">Last Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1344004243" value="" class="ss-q-short" id="entry_1344004243" dir="auto" aria-label="Last Name  " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1238511232"><div class="ss-q-title">Email address
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Your quiz score will be emailed to this address.</div></label>
+<input type="text" name="entry.1238511232" value="" class="ss-q-short" id="entry_1238511232" dir="auto" aria-label="Email address Your quiz score will be emailed to this address. " aria-required="true" required title="">
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1749487685"><div class="ss-q-title">Question 1
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Consider the design of a Grasshopper that extends Bug. When asked to move, a Grasshopper moves to a randomly chosen empty adjacent location that is within the grid. If there is no empty adjacent location that is within the grid, the Grasshopper does not move, but turns 45 degrees to the right without changing its location. </p>
+  <p>Which method(s) of the Bug class should the Grasshopper class override so that a Grasshopper can behave as described above? </p>
+  <p>I. act() <br>
+    II. move() <br>
+    III. canMove()</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 1 Consider the design of a Grasshopper that extends Bug. When asked to move, a Grasshopper moves to a randomly chosen empty adjacent location that is within the grid. If there is no empty adjacent location that is within the grid, the Grasshopper does not move, but turns 45 degrees to the right without changing its location. Which method(s) of the Bug class should the Grasshopper class override so that a Grasshopper can behave as described above?  I. act() II. move() III. canMove() "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1043763009" value="I only" id="group_1043763009_1" role="radio" class="ss-q-radio" aria-label="I only" required aria-required="true"></span>
+<span class="ss-choice-label">I only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1043763009" value="II only" id="group_1043763009_2" role="radio" class="ss-q-radio" aria-label="II only" required aria-required="true"></span>
+<span class="ss-choice-label">II only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1043763009" value="I and II only" id="group_1043763009_3" role="radio" class="ss-q-radio" aria-label="I and II only" required aria-required="true"></span>
+<span class="ss-choice-label">I and II only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1043763009" value="II and III only" id="group_1043763009_4" role="radio" class="ss-q-radio" aria-label="II and III only" required aria-required="true"></span>
+<span class="ss-choice-label">II and III only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1043763009" value="I, II, and III" id="group_1043763009_5" role="radio" class="ss-q-radio" aria-label="I, II, and III" required aria-required="true"></span>
+<span class="ss-choice-label">I, II, and III</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1287595495"><div class="ss-q-title">Question 2
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Assume that gus has been defined and initialized as a Bug object in a class that contains the following code segment. </p>
+  <p>int numTurnsMade = 0; <br>
+    for (int k = 1; k &lt;= 100; k++) {   </p>
+  <blockquote>
+    <p>int dir = gus.getDirection();   <br>
+      int dirTurn = dir + Location.HALF_RIGHT;   <br>
+      gus.act();   <br>
+      if ( /* expression */ )    </p>
+    <blockquote>
+      <p> numTurnsMade++; </p>
+    </blockquote>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following could be used to replace /* expression */ so that the variable numTurnsMade accurately stores the number of times that gus turns 45 degrees to the right?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 2 Assume that gus has been defined and initialized as a Bug object in a class that contains the following code segment. int numTurnsMade = 0; for (int k = 1; k &lt;= 100; k++) {   int dir = gus.getDirection();   int dirTurn = dir + Location.HALF_RIGHT;   gus.act();   if ( /* expression */ )     numTurnsMade++; } Which of the following could be used to replace /* expression */ so that the variable numTurnsMade accurately stores the number of times that gus turns 45 degrees to the right? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.444371114" value="dir == dirTurn" id="group_444371114_1" role="radio" class="ss-q-radio" aria-label="dir == dirTurn" required aria-required="true"></span>
+<span class="ss-choice-label">dir == dirTurn</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.444371114" value="dir == gus.getDirection()" id="group_444371114_2" role="radio" class="ss-q-radio" aria-label="dir == gus.getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">dir == gus.getDirection()</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.444371114" value="dirTurn == Location.HALF_RIGHT" id="group_444371114_3" role="radio" class="ss-q-radio" aria-label="dirTurn == Location.HALF_RIGHT" required aria-required="true"></span>
+<span class="ss-choice-label">dirTurn == Location.HALF_RIGHT</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.444371114" value="dirTurn == gus.getDirection()" id="group_444371114_4" role="radio" class="ss-q-radio" aria-label="dirTurn == gus.getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">dirTurn == gus.getDirection()</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.444371114" value="Location.HALF_RIGHT == gus.getDirection()" id="group_444371114_5" role="radio" class="ss-q-radio" aria-label="Location.HALF_RIGHT == gus.getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">Location.HALF_RIGHT == gus.getDirection()</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_583126826"><div class="ss-q-title">Question 3
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Consider the following method that is intended to return an ArrayList of all the locations in grd that contain actors facing in direction dir. </p>
+  <p>public ArrayList findLocsFacingDir(int dir, Grid grd) {   </p>
+  <blockquote>
+    <p>ArrayList desiredLocs = new ArrayList();   <br>
+      for (Location loc : grd.getOccupiedLocations()) {     </p>
+    <blockquote>
+      <p>if ( /* expression */ == dir )       </p>
+      <blockquote>
+        <p>desiredLocs.add(loc);   </p>
+      </blockquote>
+      </blockquote>
+    <p>}   <br>
+      return desiredLocs; </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following can be used to replace /* expression */ so that findLocsFacingDir will work as intended?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 3 Consider the following method that is intended to return an ArrayList of all the locations in grd that contain actors facing in direction dir. public ArrayList findLocsFacingDir(int dir, Grid grd) {   ArrayList desiredLocs = new ArrayList();   for (Location loc : grd.getOccupiedLocations()) {     if ( /* expression */ == dir )       desiredLocs.add(loc);   }   return desiredLocs; } Which of the following can be used to replace /* expression */ so that findLocsFacingDir will work as intended? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1471230250" value="loc.getDirection()" id="group_1471230250_1" role="radio" class="ss-q-radio" aria-label="loc.getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">loc.getDirection()</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1471230250" value="getDirection(loc)" id="group_1471230250_2" role="radio" class="ss-q-radio" aria-label="getDirection(loc)" required aria-required="true"></span>
+<span class="ss-choice-label">getDirection(loc)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1471230250" value="((Actor) loc).getDirection()" id="group_1471230250_3" role="radio" class="ss-q-radio" aria-label="((Actor) loc).getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">((Actor) loc).getDirection()</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1471230250" value="grd(loc).getDirection()" id="group_1471230250_4" role="radio" class="ss-q-radio" aria-label="grd(loc).getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">grd(loc).getDirection()</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1471230250" value="grd.get(loc).getDirection()" id="group_1471230250_5" role="radio" class="ss-q-radio" aria-label="grd.get(loc).getDirection()" required aria-required="true"></span>
+<span class="ss-choice-label">grd.get(loc).getDirection()</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2123625428"><div class="ss-q-title">Question 4
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>A ColorChangingCritter behaves like a ChameleonCritter but does not turn when it moves. A partial declaration for the ColorChangingCritter class is as follows. </p>
+  <p>public class ColorChangingCritter extends ChameleonCritter {   </p>
+  <blockquote>
+    <p>public void makeMove(Location loc)   { </p>
+    <blockquote>
+      <p>/* missing code */ </p>
+      </blockquote>
+    <p>} </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following replacements for /* missing code */ will correctly implement the desired behavior? </p>
+  <p>I. moveTo(loc); <br>
+    </p>
+  <p>II. super.super.makeMove(loc); </p>
+  <p>III. int dir = getDirection(); <br>
+    super.makeMove(loc); <br>
+    setDirection(dir);</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 4 A ColorChangingCritter behaves like a ChameleonCritter but does not turn when it moves. A partial declaration for the ColorChangingCritter class is as follows. public class ColorChangingCritter extends ChameleonCritter {   public void makeMove(Location loc)   { /* missing code */ } } Which of the following replacements for /* missing code */ will correctly implement the desired behavior? I. moveTo(loc); II. super.super.makeMove(loc); III. int dir = getDirection(); super.makeMove(loc); setDirection(dir); "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1875959798" value="I only" id="group_1875959798_1" role="radio" class="ss-q-radio" aria-label="I only" required aria-required="true"></span>
+<span class="ss-choice-label">I only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1875959798" value="III only" id="group_1875959798_2" role="radio" class="ss-q-radio" aria-label="III only" required aria-required="true"></span>
+<span class="ss-choice-label">III only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1875959798" value="I and II only" id="group_1875959798_3" role="radio" class="ss-q-radio" aria-label="I and II only" required aria-required="true"></span>
+<span class="ss-choice-label">I and II only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1875959798" value="I and III only" id="group_1875959798_4" role="radio" class="ss-q-radio" aria-label="I and III only" required aria-required="true"></span>
+<span class="ss-choice-label">I and III only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1875959798" value="I, II, and III" id="group_1875959798_5" role="radio" class="ss-q-radio" aria-label="I, II, and III" required aria-required="true"></span>
+<span class="ss-choice-label">I, II, and III</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1412866270"><div class="ss-q-title">Question 5
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following is not one of the "Big Five" methods in Critter's act implementation?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 5 Which of the following is not one of the &quot;Big Five&quot; methods in Critter&#39;s act implementation? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.123251820" value="makeMove" id="group_123251820_1" role="radio" class="ss-q-radio" aria-label="makeMove" required aria-required="true"></span>
+<span class="ss-choice-label">makeMove</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.123251820" value="getMoveLocations" id="group_123251820_2" role="radio" class="ss-q-radio" aria-label="getMoveLocations" required aria-required="true"></span>
+<span class="ss-choice-label">getMoveLocations</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.123251820" value="move" id="group_123251820_3" role="radio" class="ss-q-radio" aria-label="move" required aria-required="true"></span>
+<span class="ss-choice-label">move</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.123251820" value="selectMoveLocation" id="group_123251820_4" role="radio" class="ss-q-radio" aria-label="selectMoveLocation" required aria-required="true"></span>
+<span class="ss-choice-label">selectMoveLocation</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.123251820" value="getActors" id="group_123251820_5" role="radio" class="ss-q-radio" aria-label="getActors" required aria-required="true"></span>
+<span class="ss-choice-label">getActors</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_886694261"><div class="ss-q-title">Question 6
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">What is the default behavior of a Critter with regard to its neighbors?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 6 What is the default behavior of a Critter with regard to its neighbors? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1843436647" value="remove all" id="group_1843436647_1" role="radio" class="ss-q-radio" aria-label="remove all" required aria-required="true"></span>
+<span class="ss-choice-label">remove all</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1843436647" value="remove all except Rocks" id="group_1843436647_2" role="radio" class="ss-q-radio" aria-label="remove all except Rocks" required aria-required="true"></span>
+<span class="ss-choice-label">remove all except Rocks</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1843436647" value="remove all except Rocks and Critters" id="group_1843436647_3" role="radio" class="ss-q-radio" aria-label="remove all except Rocks and Critters" required aria-required="true"></span>
+<span class="ss-choice-label">remove all except Rocks and Critters</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1843436647" value="turn 45 degrees if an Actor is ahead" id="group_1843436647_4" role="radio" class="ss-q-radio" aria-label="turn 45 degrees if an Actor is ahead" required aria-required="true"></span>
+<span class="ss-choice-label">turn 45 degrees if an Actor is ahead</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1843436647" value="set it&#39;s own color to that of a random neighbor" id="group_1843436647_5" role="radio" class="ss-q-radio" aria-label="set it&#39;s own color to that of a random neighbor" required aria-required="true"></span>
+<span class="ss-choice-label">set it's own color to that of a random neighbor</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_897407989"><div class="ss-q-title">Question 7
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">A FastCritter behaves exactly like a Critter, except that it can move up to two grid locations in each direction (assuming that its path is not blocked by another Actor). To achieve this behavior, which method should be overridden?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 7 A FastCritter behaves exactly like a Critter, except that it can move up to two grid locations in each direction (assuming that its path is not blocked by another Actor). To achieve this behavior, which method should be overridden? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2007731062" value="getMoveLocations" id="group_2007731062_1" role="radio" class="ss-q-radio" aria-label="getMoveLocations" required aria-required="true"></span>
+<span class="ss-choice-label">getMoveLocations</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2007731062" value="selectMoveLocation" id="group_2007731062_2" role="radio" class="ss-q-radio" aria-label="selectMoveLocation" required aria-required="true"></span>
+<span class="ss-choice-label">selectMoveLocation</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2007731062" value="makeMove" id="group_2007731062_3" role="radio" class="ss-q-radio" aria-label="makeMove" required aria-required="true"></span>
+<span class="ss-choice-label">makeMove</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2007731062" value="getActors" id="group_2007731062_4" role="radio" class="ss-q-radio" aria-label="getActors" required aria-required="true"></span>
+<span class="ss-choice-label">getActors</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2007731062" value="move" id="group_2007731062_5" role="radio" class="ss-q-radio" aria-label="move" required aria-required="true"></span>
+<span class="ss-choice-label">move</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2115474299"><div class="ss-q-title">Question 8
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Given the following partial implementation of a Critter subclass: </p>
+  <p>public class MysteryCritter extends Critter {   </p>
+  <blockquote>
+    <p>public void processActors(ArrayList actors) {     </p>
+    <blockquote>
+      <p>for (Actor a : actors)     {  </p>
+      <blockquote>
+        <p>/* missing code */  </p>
+        </blockquote>
+      <p>}   </p>
+      </blockquote>
+    <p>} </p>
+    </blockquote>
+  <p>} </p>
+  <p>Which of the following should not be used to replace /* missing code */?</p>
+</div>
+</label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 8 Given the following partial implementation of a Critter subclass: public class MysteryCritter extends Critter {   public void processActors(ArrayList actors) {     for (Actor a : actors)     {  /* missing code */  }   } } Which of the following should not be used to replace /* missing code */? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1676299967" value="a.setColor( Color.RED );" id="group_1676299967_1" role="radio" class="ss-q-radio" aria-label="a.setColor( Color.RED );" required aria-required="true"></span>
+<span class="ss-choice-label">a.setColor( Color.RED );</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1676299967" value="a.removeSelfFromGrid();" id="group_1676299967_2" role="radio" class="ss-q-radio" aria-label="a.removeSelfFromGrid();" required aria-required="true"></span>
+<span class="ss-choice-label">a.removeSelfFromGrid();</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1676299967" value="moveTo( a.getLocation() );" id="group_1676299967_3" role="radio" class="ss-q-radio" aria-label="moveTo( a.getLocation() );" required aria-required="true"></span>
+<span class="ss-choice-label">moveTo( a.getLocation() );</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1676299967" value="setDirection( a.getDirection() );" id="group_1676299967_4" role="radio" class="ss-q-radio" aria-label="setDirection( a.getDirection() );" required aria-required="true"></span>
+<span class="ss-choice-label">setDirection( a.getDirection() );</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_428454361"><div class="ss-q-title">Question 9
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which of the following do BoxBug and ChameleonCritter have in common?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 9 Which of the following do BoxBug and ChameleonCritter have in common? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1566290942" value="They are both subclasses of Bug" id="group_1566290942_1" role="radio" class="ss-q-radio" aria-label="They are both subclasses of Bug" required aria-required="true"></span>
+<span class="ss-choice-label">They are both subclasses of Bug</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1566290942" value="They are both subclasses of subclasses of Actor" id="group_1566290942_2" role="radio" class="ss-q-radio" aria-label="They are both subclasses of subclasses of Actor" required aria-required="true"></span>
+<span class="ss-choice-label">They are both subclasses of subclasses of Actor</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1566290942" value="They are both superclasses of Actor" id="group_1566290942_3" role="radio" class="ss-q-radio" aria-label="They are both superclasses of Actor" required aria-required="true"></span>
+<span class="ss-choice-label">They are both superclasses of Actor</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1566290942" value="They both implement the Grid interface" id="group_1566290942_4" role="radio" class="ss-q-radio" aria-label="They both implement the Grid interface" required aria-required="true"></span>
+<span class="ss-choice-label">They both implement the Grid interface</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1566290942" value="They are both subclasses of Critter" id="group_1566290942_5" role="radio" class="ss-q-radio" aria-label="They are both subclasses of Critter" required aria-required="true"></span>
+<span class="ss-choice-label">They are both subclasses of Critter</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_963190807"><div class="ss-q-title">Question 10
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Consider the following statements: </p>
+  <p>Location start = new Location(5,6);<br>
+Location finish = start.getAdjacentLocation(Location.EAST); </p>
+  <p>What is the value of finish at this point?</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 10 Consider the following statements: Location start = new Location(5,6); Location finish = start.getAdjacentLocation(Location.EAST); What is the value of finish at this point? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1901068861" value="(5, 7)" id="group_1901068861_1" role="radio" class="ss-q-radio" aria-label="(5, 7)" required aria-required="true"></span>
+<span class="ss-choice-label">(5, 7)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1901068861" value="(6, 6)" id="group_1901068861_2" role="radio" class="ss-q-radio" aria-label="(6, 6)" required aria-required="true"></span>
+<span class="ss-choice-label">(6, 6)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1901068861" value="(5, 6)" id="group_1901068861_3" role="radio" class="ss-q-radio" aria-label="(5, 6)" required aria-required="true"></span>
+<span class="ss-choice-label">(5, 6)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1901068861" value="(6, 5)" id="group_1901068861_4" role="radio" class="ss-q-radio" aria-label="(6, 5)" required aria-required="true"></span>
+<span class="ss-choice-label">(6, 5)</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1511058660"><div class="ss-q-title">Question 11
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">What is the correct way to add an Actor to a Grid?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 11 What is the correct way to add an Actor to a Grid? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.987626094" value="subclass Actor and set the grid in the constructor" id="group_987626094_1" role="radio" class="ss-q-radio" aria-label="subclass Actor and set the grid in the constructor" required aria-required="true"></span>
+<span class="ss-choice-label">subclass Actor and set the grid in the constructor</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.987626094" value="set the Actor&#39;s private grid variable" id="group_987626094_2" role="radio" class="ss-q-radio" aria-label="set the Actor&#39;s private grid variable" required aria-required="true"></span>
+<span class="ss-choice-label">set the Actor's private grid variable</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.987626094" value="call Grid.put, passing in the Actor" id="group_987626094_3" role="radio" class="ss-q-radio" aria-label="call Grid.put, passing in the Actor" required aria-required="true"></span>
+<span class="ss-choice-label">call Grid.put, passing in the Actor</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.987626094" value="call Actor.putSelfInGrid, passing in the Location" id="group_987626094_4" role="radio" class="ss-q-radio" aria-label="call Actor.putSelfInGrid, passing in the Location" required aria-required="true"></span>
+<span class="ss-choice-label">call Actor.putSelfInGrid, passing in the Location</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_844054653"><div class="ss-q-title">Question 12
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">The Actor class uses:</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 12 The Actor class uses: "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.226825313" value="Bug and Flower" id="group_226825313_1" role="radio" class="ss-q-radio" aria-label="Bug and Flower" required aria-required="true"></span>
+<span class="ss-choice-label">Bug and Flower</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.226825313" value="BoundedGrid and Unbounded Grid" id="group_226825313_2" role="radio" class="ss-q-radio" aria-label="BoundedGrid and Unbounded Grid" required aria-required="true"></span>
+<span class="ss-choice-label">BoundedGrid and Unbounded Grid</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.226825313" value="Actor and Critter" id="group_226825313_3" role="radio" class="ss-q-radio" aria-label="Actor and Critter" required aria-required="true"></span>
+<span class="ss-choice-label">Actor and Critter</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.226825313" value="Grid and Location" id="group_226825313_4" role="radio" class="ss-q-radio" aria-label="Grid and Location" required aria-required="true"></span>
+<span class="ss-choice-label">Grid and Location</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1280910886"><div class="ss-q-title">Question 13
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">The default color for a Bug is:</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 13 The default color for a Bug is: "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.663929399" value="Color.RED" id="group_663929399_1" role="radio" class="ss-q-radio" aria-label="Color.RED" required aria-required="true"></span>
+<span class="ss-choice-label">Color.RED</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.663929399" value="Color.GREEN" id="group_663929399_2" role="radio" class="ss-q-radio" aria-label="Color.GREEN" required aria-required="true"></span>
+<span class="ss-choice-label">Color.GREEN</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.663929399" value="Color.BLUE" id="group_663929399_3" role="radio" class="ss-q-radio" aria-label="Color.BLUE" required aria-required="true"></span>
+<span class="ss-choice-label">Color.BLUE</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.663929399" value="Color.YELLOW" id="group_663929399_4" role="radio" class="ss-q-radio" aria-label="Color.YELLOW" required aria-required="true"></span>
+<span class="ss-choice-label">Color.YELLOW</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_188440129"><div class="ss-q-title">Question 14
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">
+  <p>Consider the following code segment. </p>
+  <p>Grid grid = new BoundedGrid(10, 10); <br>
+    Bug ladybug = new Bug(); <br>
+    ladybug.putSelfInGrid(grid, new Location(2, 8)); <br>
+    ladybug.setDirection(Location.WEST); <br>
+    ladybug.act(); </p>
+  <p>Under which of the following circumstances can ladybug advance to location (2,7) ? </p>
+  <p> I. The location (2,7) contains another Bug. <br>
+    II. The location (2,7) contains a Flower. <br>
+    III. The location (2,7) contains a Rock.</p>
+</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 14 Consider the following code segment. Grid grid = new BoundedGrid(10, 10); Bug ladybug = new Bug(); ladybug.putSelfInGrid(grid, new Location(2, 8)); ladybug.setDirection(Location.WEST); ladybug.act(); Under which of the following circumstances can ladybug advance to location (2,7) ? I. The location (2,7) contains another Bug. II. The location (2,7) contains a Flower. III. The location (2,7) contains a Rock. "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.970680132" value="I only" id="group_970680132_1" role="radio" class="ss-q-radio" aria-label="I only" required aria-required="true"></span>
+<span class="ss-choice-label">I only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.970680132" value="II only " id="group_970680132_2" role="radio" class="ss-q-radio" aria-label="II only " required aria-required="true"></span>
+<span class="ss-choice-label">II only&nbsp;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.970680132" value="III only" id="group_970680132_3" role="radio" class="ss-q-radio" aria-label="III only" required aria-required="true"></span>
+<span class="ss-choice-label">III only</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.970680132" value="I and II only" id="group_970680132_4" role="radio" class="ss-q-radio" aria-label="I and II only" required aria-required="true"></span>
+<span class="ss-choice-label">I and II only</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1084084706"><div class="ss-q-title">Question 15
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Which statement in Bug.canMove() insures that the Bug won't try to walk into another Bug?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 15 Which statement in Bug.canMove() insures that the Bug won&#39;t try to walk into another Bug? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1265694558" value="if (gr == null) return false;" id="group_1265694558_1" role="radio" class="ss-q-radio" aria-label="if (gr == null) return false;" required aria-required="true"></span>
+<span class="ss-choice-label">if (gr == null) return false;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1265694558" value="if (!gr.isValid(next)) return false;" id="group_1265694558_2" role="radio" class="ss-q-radio" aria-label="if (!gr.isValid(next)) return false;" required aria-required="true"></span>
+<span class="ss-choice-label">if (!gr.isValid(next)) return false;</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1265694558" value="Actor neighbor = gr.get(next);" id="group_1265694558_3" role="radio" class="ss-q-radio" aria-label="Actor neighbor = gr.get(next);" required aria-required="true"></span>
+<span class="ss-choice-label">Actor neighbor = gr.get(next);</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1265694558" value="return (neighbor == null) || (neighbor instanceof Flower);" id="group_1265694558_4" role="radio" class="ss-q-radio" aria-label="return (neighbor == null) || (neighbor instanceof Flower);" required aria-required="true"></span>
+<span class="ss-choice-label">return (neighbor == null) || (neighbor instanceof Flower);</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1982353399"><div class="ss-q-title">Question 16
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">In which method does ChameleonCritter take on the color of a random neighbor?</div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Question 16 In which method does ChameleonCritter take on the color of a random neighbor? "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2065844622" value="getActors" id="group_2065844622_1" role="radio" class="ss-q-radio" aria-label="getActors" required aria-required="true"></span>
+<span class="ss-choice-label">getActors</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2065844622" value="processActors" id="group_2065844622_2" role="radio" class="ss-q-radio" aria-label="processActors" required aria-required="true"></span>
+<span class="ss-choice-label">processActors</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2065844622" value="getMoveLocations" id="group_2065844622_3" role="radio" class="ss-q-radio" aria-label="getMoveLocations" required aria-required="true"></span>
+<span class="ss-choice-label">getMoveLocations</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2065844622" value="selectMoveLocation" id="group_2065844622_4" role="radio" class="ss-q-radio" aria-label="selectMoveLocation" required aria-required="true"></span>
+<span class="ss-choice-label">selectMoveLocation</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2065844622" value="makeMove" id="group_2065844622_5" role="radio" class="ss-q-radio" aria-label="makeMove" required aria-required="true"></span>
+<span class="ss-choice-label">makeMove</span>
+</label></li></ul>
+<div class="error-message"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-1857683063143555968&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fromEmail" value="false">
+
+<input type="hidden" name="fbzx" value="-1857683063143555968">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></div></form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
+<a class="ss-logo-link" href="http://drive.google.com/"><img class="ss-logo" src="./Quiz A_files/drive_logo_small2.png" alt="Google Drive"></a></div>
+<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of Galileo Academy of Science and Technology.</span>
+<br>
+<a href="https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/reportabuse?source=https://docs.google.com/forms/d/13fYM-9oD7VD2J3aGerpRfzdiO9jI7PPaBaGOzxGoLPE/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic="" aria-relevant="additions">Screen reader support enabled.</div></div>
+
+
+<script type="text/javascript" src="./Quiz A_files/1932615572-formviewer_prd.js"></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
+          "[100,\x22#CCC\x22,[]\n]\n");
+      </script></div></body></html>
